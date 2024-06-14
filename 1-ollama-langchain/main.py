@@ -1,9 +1,17 @@
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.llms import Ollama
+
+from langchain_community.llms import Ollama  
+
+# llm = Ollama(
+#     model="gpt2", callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
+# )
+
+# print(llm("Tell me about the history of AI"))
+
 
 llm = Ollama(
-    model="mistral", callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
+    model="qwen:14b", callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
 )
 
 print(llm("Tell me about the history of AI"))
