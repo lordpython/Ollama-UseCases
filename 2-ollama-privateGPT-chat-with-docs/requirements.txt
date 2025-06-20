@@ -2,7 +2,7 @@ langchain==0.0.274
 gpt4all==1.0.8
 chromadb==0.4.7
 llama-cpp-python==0.1.81
-urllib3==2.0.4
+urllib3==2.5.0
 PyMuPDF==1.23.5
 python-dotenv==1.0.0
 unstructured==0.10.8
@@ -12,3 +12,4 @@ pandoc==2.3
 pypandoc==1.11
 tqdm==4.66.1
 sentence_transformers==2.2.2
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
