@@ -12,3 +12,5 @@ pandoc==2.3
 pypandoc==1.11
 tqdm==4.66.1
 sentence_transformers==2.2.2
+protobuf>=6.33.5 # not directly required, pinned by Snyk to avoid a vulnerability
+torch>=2.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
